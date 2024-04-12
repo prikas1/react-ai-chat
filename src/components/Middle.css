@@ -1,0 +1,63 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.msg-get{
+   padding: 10px;
+   border-radius: 10px;
+   background-color: rgb(196, 188, 188);
+   width: 80%;
+   margin: 0px;
+  
+}
+
+.send{
+    background-color: rgb(149, 231, 149);
+}
+
+.msg-get-new{
+    width: 80%;
+}
+
+
+
+span{
+    color: grey;
+    font-size: 13px;
+}
+
+
+.tags p{
+    color: grey;
+}
+
+
+
+
+.items{
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.items p{
+    margin: 0px;
+}
+
+
+
+.button-container {
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent buttons from wrapping to new lines */
+  padding-bottom: 10px; /* Add some bottom padding to avoid hiding the last button */
+}
+
+.tags-buttons {
+  display: inline-block; /* Display buttons in a row */
+}
+
+@layer components {
+   .tags-buttons button {
+    @apply border-2 border-blue-300 rounded-lg bg-slate-200 py-1 px-2 mr-3;
+  }
+}

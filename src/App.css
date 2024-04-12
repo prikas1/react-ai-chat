@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+/* src/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body{
+   background-color: rgb(207, 206, 206);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.center-container{
+   display: flex;
+   justify-content: center;
+   background-color: rgb(207, 206, 206);
+   align-items: center; 
+   padding: 10px 0px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.mobile-container {
+  background-color: white;
+  border-radius: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 360px; 
+  margin: 0 auto; 
+  padding: 5px; 
+} 
+
+
+.footer{
+  padding: 10px;
+    border-radius: 0px 0px 20px 20px;
+}
+
+
+.online-dot {
+  position: absolute;
+  bottom: 5px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: green;
+  border: 1px solid white;
+}
+
+
+@layer components {
+   .filter-btn button {
+    @apply bg-slate-100 rounded-md px-3 py-1 my-2 mr-2;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+  .header{
+    @apply bg-slate-100 p-3 flex justify-between;
+     border-radius: 20px 20px 0px 0px;
+     align-items: center;
   }
 }
