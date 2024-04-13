@@ -1,3 +1,13 @@
+## Localhost Pictures Screenshots
+
+[Pic1](/localhost-pictures/Screenshot (1).png)
+[Pic2](/localhost-pictures/Screenshot (2).png)
+[Pic3](/localhost-pictures/Screenshot (3).png)
+
+# Live Site URL
+This app is live at - [Live Site](https://prikas1.github.io/react-ai-chat/)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

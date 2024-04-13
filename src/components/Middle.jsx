@@ -1,26 +1,26 @@
 import React from 'react';
 import "./Middle.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGreaterThan } from '@fortawesome/free-solid-svg-icons';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faGreaterThan, faTimes, faBolt } from '@fortawesome/free-solid-svg-icons';
+
 
 
 function Middle() {
 
   const scrollLeft = () => {
     const container = document.querySelector('.button-container');
-    container.scrollLeft -= 100; // Adjust scroll speed as needed
+    container.scrollLeft -= 100;
   };
 
   const scrollRight = () => {
     const container = document.querySelector('.button-container');
-    container.scrollLeft += 100; // Adjust scroll speed as needed
+    container.scrollLeft += 100; 
   };
 
   return (
     <div className='middle py-8 px-2'>
-     <div className='msg-div py-2'>
-            <p className='msg-get'>Hi Sam! I am your personal shopping assistant, how can I help you today?</p>
+     <div className='msg-div  py-2'>
+            <p className='msg-get bg-slate-200'>Hi Sam! I am your personal shopping assistant, how can I help you today?</p>
             <p className='py-1 px-2 text-black text-sm '>4:45 PM</p>
           
         </div>
@@ -52,10 +52,10 @@ function Middle() {
     
     <div className='items d-flex align-items-center'>
    
-    <img src='bag.png' />
+    <img src='/react-ai-chat/bag.png' />
     
     <div className='pl-4'>
-    <p className='font-bold py-2'>Bags on Timpu</p>
+    <p className='font-bold py-2'>Bags on Timpu <FontAwesomeIcon icon={faBolt} className="text-yellow-500" /></p>
     <p className='text-grey font-sm text-slate-500 '>1123 products <FontAwesomeIcon className="pl-3 icon " icon={faGreaterThan} /></p>
     </div>
     </div>
